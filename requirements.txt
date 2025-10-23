@@ -1,32 +1,23 @@
-langchain
-python-dotenv
-ipykernel
-langchain-community
-pypdf
-bs4
-arxiv
-pymupdf
-wikipedia
-langchain-text-splitters
-langchain-openai
-chromadb
-sentence_transformers
-langchain_huggingface
-faiss-cpu
-langchain_chroma
-duckdb
-pandas
-openai
-langchain-groq
-duckduckgo-search
-pymupdf
-arxiv
-wikipedia
-mysql-connector-python
-SQLAlchemy
-validators==0.28.1
-youtube_transcript_api
-unstructured
-pytube
-numexpr
-huggingface_hub
+# Core LangChain stack (compatible with initialize_agent)
+langchain==0.1.16
+langchain-core==0.1.43
+langchain-community==0.0.33
+langchain-groq==0.0.6
+
+# Streamlit for UI
+streamlit==1.37.0
+
+# Env management
+python-dotenv==1.0.1
+
+# Groq client dependency (auto-installed with langchain-groq, but just in case)
+groq==0.3.0
+
+# Web search + info tools
+duckduckgo-search==5.3.0
+wikipedia==1.4.0
+arxiv==2.1.0
+
+# Optional safety + helper packages
+pydantic==2.7.1
+requests==2.32.3
